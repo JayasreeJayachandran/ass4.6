@@ -11,6 +11,9 @@ Assuming initial data size is 600 TB. How will you estimate the number of data n
 2.Imagine that you are uploading a file of 500MB into HDFS.100MB of data is successfully uploaded into HDFS and 
 another client wants to read the uploaded data while the upload is still in progress. What will happen in such a
 scenario, will the 100 MB of data that is uploaded will it be displayed?
+          The uploaded file can be viewed,when the whole block is writen and the replicas are created and the
+          name node got acknowledgement of completion of the replicas ,then the block can be viewed.If the size of
+          the block is to be 100MB,then the block can be viewed after the replicas are copied.
           
 
              
